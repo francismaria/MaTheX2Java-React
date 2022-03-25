@@ -1,16 +1,18 @@
-import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
-import Header from '../header/Header';
 import NotFound from '../error/NotFound';
+import Header from '../header/Header';
+import Footer from '../footer/Footer';
 
 function App() {
   return (
     <section id="root-app">
+      <Header />
       <Routes>
-        <Route path="/" element={<Header />} />
+        <Route path="/" element={<NotFound />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <Footer />
     </section>
   );
 }

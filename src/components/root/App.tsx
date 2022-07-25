@@ -1,8 +1,9 @@
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
-import NotFound from '../error/NotFound';
-import Header from '../header/Header';
-import Footer from '../footer/Footer';
+import NotFound from 'components/error/NotFound';
+import Header from 'components/header/Header';
+import Rules from 'components/rules/Rules';
+import Footer from 'components/footer/Footer';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<NotFound />} />
+        <Route path="/rules" element={<Rules />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

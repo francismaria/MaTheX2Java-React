@@ -22,12 +22,12 @@
   width: auto !important;
 }
 
-#submitButtonContainer {
+#actionButtonContainer {
   display: flex;
   justify-content: center;
 }
 
-#submitButtonContainer button {
+#actionButtonContainer button {
   margin: 2em 0;
   width: 20em;
   height: 4em;
@@ -40,7 +40,7 @@
   -o-transition: all 0.1s;
 }
 
-#submitButtonContainer button:hover {
+#actionButtonContainer button:hover {
   cursor: pointer;
   color: white;
   background-color: #3e7cb1;

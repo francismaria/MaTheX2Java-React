@@ -1,3 +1,11 @@
+/**
+ * Minimum value to set in order to override Ace's 
+ * z-index property for the editor's line numbers.
+ */
+#menuLinksContainer {
+  z-index: 5;
+}
+
 #menuLinksContainer ul {
   display: flex;
 }

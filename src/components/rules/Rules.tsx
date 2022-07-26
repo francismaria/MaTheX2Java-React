@@ -1,5 +1,12 @@
 import { MouseEventHandler } from 'react';
-import AnnotationRuleContent from './AnnotationRuleContent';
+import AnnotationRuleContent from './content/AnnotationRuleContent';
+import InvocationsRuleContent from './content/InvocationsRuleContent';
+import LogarithmRuleContent from './content/LogarithmRuleContent';
+import PowersRuleContent from './content/PowersRuleContent';
+import RootsRuleContent from './content/RootsRuleContent';
+import SummationsRuleContent from './content/SummationsRuleContent';
+import TrigonometryRuleContent from './content/TrigonometryRuleContent';
+import VariablesRuleContent from './content/VariablesRuleContent';
 import './Rules.css';
 
 const VISIBLE_CONTENT_DETAILS_HEIGHT = '2000px';
@@ -82,13 +89,33 @@ function Rules() {
           <a
             href="https://github.com/francismaria/MaTheX2Java/blob/master/docs/MaTheX2Java_UsersGuide.pdf"
             target="_blank"
-            rel="noreferrer">
+            rel="noreferrer"
+          >
             here
           </a>{' '}
           the pdf version of the user guide.
         </p>
+        <p>
+          Note: If you are not familiar with LaTeX&#39;s amsmath package, it is recommended that you
+          take a look at it&#39;s user guide:{' '}
+          <a
+            href="http://texdoc.net/texmf-dist/doc/latex/amsmath/amsldoc.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
+            here
+          </a>
+          .
+        </p>
       </section>
       <AnnotationRuleContent ruleContentClickHandler={handleRuleContentHeaderEvent} />
+      <VariablesRuleContent ruleContentClickHandler={handleRuleContentHeaderEvent} />
+      <PowersRuleContent ruleContentClickHandler={handleRuleContentHeaderEvent} />
+      <LogarithmRuleContent ruleContentClickHandler={handleRuleContentHeaderEvent} />
+      <TrigonometryRuleContent ruleContentClickHandler={handleRuleContentHeaderEvent} />
+      <SummationsRuleContent ruleContentClickHandler={handleRuleContentHeaderEvent} />
+      <RootsRuleContent ruleContentClickHandler={handleRuleContentHeaderEvent} />
+      <InvocationsRuleContent ruleContentClickHandler={handleRuleContentHeaderEvent} />
     </section>
   );
 }

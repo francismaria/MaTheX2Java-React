@@ -1,21 +1,10 @@
+import RuleContentHeader from './header/RuleContentHeader';
 import { RuleContentProps } from './RuleContent';
 
 function LogarithmRuleContent({ ruleContentClickHandler }: RuleContentProps) {
   return (
     <section id="variablesContent" className="ruleContent">
-      <div
-        className="contentHeader"
-        role="switch"
-        tabIndex={0}
-        aria-checked="false"
-        onClick={ruleContentClickHandler}
-      >
-        <h3>4. Logarithms</h3>
-        <div className="iconContainer">
-          <i className="fas fa-plus" />
-          <i className="fas fa-minus" />
-        </div>
-      </div>
+      <RuleContentHeader title="4. Logarithms" ruleContentClickHandler={ruleContentClickHandler} />
       <div className="ruleDetailsContent">
         <p>
           Logarithms are supported in MaTheX2Java, however it has the following restriction: the

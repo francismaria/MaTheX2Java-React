@@ -1,21 +1,13 @@
+import RuleContentHeader from './header/RuleContentHeader';
 import { RuleContentProps } from './RuleContent';
 
 function TrigonometryRuleContent({ ruleContentClickHandler }: RuleContentProps) {
   return (
     <section id="variablesContent" className="ruleContent">
-      <div
-        className="contentHeader"
-        role="switch"
-        tabIndex={0}
-        aria-checked="false"
-        onClick={ruleContentClickHandler}
-      >
-        <h3>5. Trigonometry</h3>
-        <div className="iconContainer">
-          <i className="fas fa-plus" />
-          <i className="fas fa-minus" />
-        </div>
-      </div>
+      <RuleContentHeader
+        title="5. Trigonometry"
+        ruleContentClickHandler={ruleContentClickHandler}
+      />
       <div className="ruleDetailsContent">
         <p>
           Trigonometric functions are crucial elements within the mathematic formulas, thus

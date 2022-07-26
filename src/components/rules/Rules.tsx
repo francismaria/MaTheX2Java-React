@@ -1,12 +1,12 @@
 import { MouseEventHandler } from 'react';
-import AnnotationRuleContent from './content/AnnotationRuleContent';
-import InvocationsRuleContent from './content/InvocationsRuleContent';
-import LogarithmRuleContent from './content/LogarithmRuleContent';
-import PowersRuleContent from './content/PowersRuleContent';
-import RootsRuleContent from './content/RootsRuleContent';
-import SummationsRuleContent from './content/SummationsRuleContent';
-import TrigonometryRuleContent from './content/TrigonometryRuleContent';
 import VariablesRuleContent from './content/VariablesRuleContent';
+import AnnotationRuleContent from './content/AnnotationRuleContent';
+import PowersRuleContent from './content/PowersRuleContent';
+import LogarithmRuleContent from './content/LogarithmRuleContent';
+import TrigonometryRuleContent from './content/TrigonometryRuleContent';
+import SummationsRuleContent from './content/SummationsRuleContent';
+import RootsRuleContent from './content/RootsRuleContent';
+import InvocationsRuleContent from './content/InvocationsRuleContent';
 import './Rules.css';
 
 const VISIBLE_CONTENT_DETAILS_HEIGHT = '2000px';

@@ -1,21 +1,10 @@
+import RuleContentHeader from './header/RuleContentHeader';
 import { RuleContentProps } from './RuleContent';
 
 function VariablesRuleContent({ ruleContentClickHandler }: RuleContentProps) {
   return (
     <section id="variablesContent" className="ruleContent">
-      <div
-        className="contentHeader"
-        role="switch"
-        tabIndex={0}
-        aria-checked="false"
-        onClick={ruleContentClickHandler}
-      >
-        <h3>2. Variables</h3>
-        <div className="iconContainer">
-          <i className="fas fa-plus" />
-          <i className="fas fa-minus" />
-        </div>
-      </div>
+      <RuleContentHeader title="2. Variables" ruleContentClickHandler={ruleContentClickHandler} />
       <div className="ruleDetailsContent">
         <p>
           Variables are defined as a sequence of letters (case-sensitive), numbers and underscores,

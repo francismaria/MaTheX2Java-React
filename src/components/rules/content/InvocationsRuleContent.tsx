@@ -1,21 +1,13 @@
+import RuleContentHeader from './header/RuleContentHeader';
 import { RuleContentProps } from './RuleContent';
 
 function InvocationsRuleContent({ ruleContentClickHandler }: RuleContentProps) {
   return (
     <section id="variablesContent" className="ruleContent">
-      <div
-        className="contentHeader"
-        role="switch"
-        tabIndex={0}
-        aria-checked="false"
-        onClick={ruleContentClickHandler}
-      >
-        <h3>8. Methods Invocations</h3>
-        <div className="iconContainer">
-          <i className="fas fa-plus" />
-          <i className="fas fa-minus" />
-        </div>
-      </div>
+      <RuleContentHeader
+        title="8. Methods Invocations"
+        ruleContentClickHandler={ruleContentClickHandler}
+      />
       <div className="ruleDetailsContent">
         <p>
           In order to allow the generated equations methods to interact with one another,

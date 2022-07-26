@@ -1,21 +1,10 @@
+import RuleContentHeader from './header/RuleContentHeader';
 import { RuleContentProps } from './RuleContent';
 
 function RootsRuleContent({ ruleContentClickHandler }: RuleContentProps) {
   return (
     <section id="variablesContent" className="ruleContent">
-      <div
-        className="contentHeader"
-        role="switch"
-        tabIndex={0}
-        aria-checked="false"
-        onClick={ruleContentClickHandler}
-      >
-        <h3>7. Roots</h3>
-        <div className="iconContainer">
-          <i className="fas fa-plus" />
-          <i className="fas fa-minus" />
-        </div>
-      </div>
+      <RuleContentHeader title="7. Roots" ruleContentClickHandler={ruleContentClickHandler} />
       <div className="ruleDetailsContent">
         <p>
           Note that the root element inside the brackets is strong optional. If none is specified,

@@ -1,21 +1,10 @@
+import RuleContentHeader from './header/RuleContentHeader';
 import { RuleContentProps } from './RuleContent';
 
 function AnnotationRuleContent({ ruleContentClickHandler }: RuleContentProps) {
   return (
     <section id="annotationsContent" className="ruleContent">
-      <div
-        className="contentHeader"
-        role="switch"
-        tabIndex={0}
-        aria-checked="false"
-        onClick={ruleContentClickHandler}
-      >
-        <h3>1. Annotations</h3>
-        <div className="iconContainer">
-          <i className="fas fa-plus" />
-          <i className="fas fa-minus" />
-        </div>
-      </div>
+      <RuleContentHeader title="1. Annotations" ruleContentClickHandler={ruleContentClickHandler} />
       <div className="ruleDetailsContent">
         <p>
           The use of annotations is an important feature of MaTheX2Java. These are optional commands

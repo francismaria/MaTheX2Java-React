@@ -1,0 +1,79 @@
+#mainContainer {
+  padding: 2em 8em;
+}
+
+#presentationContent h2 {
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid black;
+}
+
+.ruleContent ul {
+  list-style-type: disc;
+  padding-inline: 40px 0px;
+}
+
+.ruleContent li {
+  margin: 1em 0;
+}
+
+.contentHeader {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contentHeader:hover {
+  background-color: #dedcdc !important;
+}
+
+.contentHeader .iconContainer {
+  display: flex;
+  padding-right: 2em;
+  align-items: center;
+}
+
+.contentHeader .iconContainer i {
+  position: absolute;
+  -webkit-transition: opacity 0.1s linear;
+  -moz-transition: opacity 0.1s linear;
+  -o-transition: opacity 0.1s linear;
+  transition: opacity 0.1s linear;
+}
+
+#text-container .content-wrap {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  -webkit-transition: max-height 0.5s ease-out;
+  -moz-transition: max-height 0.5s ease-out;
+  -o-transition: max-height 0.5s ease-out;
+}
+
+.ruleDetailsContent {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  -webkit-transition: max-height 0.5s ease-out;
+  -moz-transition: max-height 0.5s ease-out;
+  -o-transition: max-height 0.5s ease-out;
+}
+
+.defaultRuleContentHeader {
+  background-color: white;
+}
+
+.highlightedRuleContentHeader {
+  background-color: #dedcdc;
+}
+
+.hiddenRuleContentDetails {
+  max-height: 0px;
+}
+
+.visibleRuleContentDetails {
+  max-height: 2000px;
+}
+
+.ruleUsageExample {
+  margin: 1em 0;
+}

@@ -70,7 +70,7 @@ function Rules() {
   };
 
   return (
-    <section id="mainContainer">
+    <main id="rulesPanel" className="mainPanel">
       <section id="presentationContent">
         <h2>Rules</h2>
         <p>
@@ -116,7 +116,7 @@ function Rules() {
       <SummationsRuleContent ruleContentClickHandler={handleRuleContentHeaderEvent} />
       <RootsRuleContent ruleContentClickHandler={handleRuleContentHeaderEvent} />
       <InvocationsRuleContent ruleContentClickHandler={handleRuleContentHeaderEvent} />
-    </section>
+    </main>
   );
 }
 

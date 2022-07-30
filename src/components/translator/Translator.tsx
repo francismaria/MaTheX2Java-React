@@ -70,7 +70,7 @@ function Translator() {
   };
 
   return (
-    <section id="translatorPanel">
+    <main id="translatorPanel" className="mainPanel">
       <section id="codePanel">
         <div
           id="sourceCodeContainer"
@@ -102,7 +102,7 @@ function Translator() {
         </div>
       </section>
       <div id="actionButtonContainer">{renderActionButton()}</div>
-    </section>
+    </main>
   );
 }
 

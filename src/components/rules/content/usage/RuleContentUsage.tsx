@@ -10,7 +10,7 @@ function RuleContentUsage({ code }: RuleContentUsageProps) {
     <AceEditor
       mode="latex"
       theme="textmate"
-      className="reactAceEditor"
+      className="ruleUsageExample"
       defaultValue={code}
       maxLines={Infinity}
       readOnly

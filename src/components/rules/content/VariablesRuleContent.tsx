@@ -1,11 +1,23 @@
 import RuleContentHeader from './header/RuleContentHeader';
 import RuleContentUsage from './usage/RuleContentUsage';
 import { RuleContentProps } from './RuleContent';
-import {
-  VARIABLES_MULTI_DIMENSIONAL_ARRAY_TYPE_LATEX,
-  VARIABLES_ONE_DIMENSION_ARRAY_TYPE_LATEX,
-  VARIABLES_SCALAR_TYPE_LATEX
-} from './usage/Examples';
+
+const VARIABLES_SCALAR_TYPE_LATEX: string = `${`
+\\begin{equation}
+  result = c          // c is a scalar variable
+\\end{equation}`}`;
+
+const VARIABLES_ONE_DIMENSION_ARRAY_TYPE_LATEX: string = `${`
+\\begin{equation}
+  % [c] : int[10]
+  result = c_{2}      // c is a one-dimension array variable
+\\end{equation}`}`;
+
+const VARIABLES_MULTI_DIMENSIONAL_ARRAY_TYPE_LATEX: string = `${`
+\\begin{equation}
+  % [c] : int[10][10]
+  result = c_{0, 5}   // c is a two-dimension array variable
+\\end{equation}`}`;
 
 function VariablesRuleContent({ ruleContentClickHandler }: RuleContentProps) {
   return (

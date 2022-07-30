@@ -1,13 +1,36 @@
 import RuleContentHeader from './header/RuleContentHeader';
 import RuleContentUsage from './usage/RuleContentUsage';
 import { RuleContentProps } from './RuleContent';
-import {
-  ANNOTATION_NAME_LATEX,
-  ANNOTATION_RETURN_TYPE_LATEX,
-  ANNOTATION_SINGLE_TYPE_VARIABLE_LATEX,
-  ANNOTATION_MULTI_TYPE_VARIABLE_LATEX,
-  ANNOTATION_ARRAY_TYPE_VARIABLE_LATEX
-} from './usage/Examples';
+
+const ANNOTATION_NAME_LATEX: string = `${`% name : myEquation
+\\begin{equation}
+...
+\\end{equation}`}`;
+
+const ANNOTATION_RETURN_TYPE_LATEX: string = `${`% return : int
+\\begin{equation}
+...
+\\end{equation}`}`;
+
+const ANNOTATION_SINGLE_TYPE_VARIABLE_LATEX: string = `${`% name : myEquation
+\\begin{equation}
+% [x] : int
+...
+\\end{equation}`}`;
+
+const ANNOTATION_MULTI_TYPE_VARIABLE_LATEX: string = `${`% name : myEquation
+\\begin{equation}
+% [x, y] : int, [w] : long
+% [z] : short
+...
+\\end{equation}`}`;
+
+const ANNOTATION_ARRAY_TYPE_VARIABLE_LATEX: string = `${`% name : myEquation
+\\begin{equation}
+% [x] : int[10]
+% [y] : short[10][5]
+...
+\\end{equation}`}`;
 
 function AnnotationRuleContent({ ruleContentClickHandler }: RuleContentProps) {
   return (

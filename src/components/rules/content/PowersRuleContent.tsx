@@ -1,7 +1,16 @@
 import RuleContentHeader from './header/RuleContentHeader';
 import RuleContentUsage from './usage/RuleContentUsage';
 import { RuleContentProps } from './RuleContent';
-import { POWER_COMPLEX_VARIABLE_LATEX, POWER_SIMPLE_VARIABLE_LATEX } from './usage/Examples';
+
+const POWER_SIMPLE_VARIABLE_LATEX: string = `${`% name: simplePowerExample 
+\\begin{equation}
+  result = 2^{3}
+\\end{equation}`}`;
+
+const POWER_COMPLEX_VARIABLE_LATEX: string = `${`% name: complexPowerExample 
+\\begin{equation}
+  result = (2 - \\sin{0.4})^{3 - c}
+\\end{equation}`}`;
 
 function PowersRuleContent({ ruleContentClickHandler }: RuleContentProps) {
   return (

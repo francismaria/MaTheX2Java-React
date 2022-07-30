@@ -41,13 +41,13 @@ ul {
 /* ------------------------
  *     Smartphone Version
  * ------------------------ */
- 
-@media screen and (max-width: 1199px){
-  .mainPanel{
-    padding: 4em;
+
+@media screen and (max-width: 1199px) {
+  .mainPanel {
+    padding: 2em;
   }
-  
-  .mainPanel h2{
+
+  .mainPanel h2 {
     margin-top: 0;
     padding-bottom: 0.5em;
     border-bottom: 1px solid black;

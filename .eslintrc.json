@@ -22,6 +22,10 @@
   "rules": {
     "import/extensions": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".ts"] }],
+    "no-shadow": "off",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-shadow": ["error"],
+    "@typescript-eslint/no-unused-vars": "error",
     "jsx-a11y/click-events-have-key-events": "off"
   },
   "settings": {

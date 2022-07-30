@@ -1,0 +1,57 @@
+#translatorPanel {
+  padding: 2em 4em;
+}
+
+#codePanel {
+  display: flex;
+}
+
+.codeContainer {
+  flex: 1;
+}
+
+.hiddenContainer {
+  display: none;
+}
+
+.codeContainer h3 {
+  text-align: center;
+}
+
+.reactAceEditor {
+  width: auto !important;
+}
+
+#actionButtonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+#actionButtonContainer button {
+  margin: 2em 0;
+  width: 20em;
+  height: 4em;
+  background-color: transparent;
+  border-radius: 10px;
+  border: solid #3e7cb1 2px;
+  transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  -o-transition: all 0.1s;
+}
+
+#actionButtonContainer button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #3e7cb1;
+}
+
+@media screen and (min-width: 1200px) {
+  #sourceCodeEditor {
+    margin-right: 30px;
+  }
+
+  #destinationCodeEditor {
+    margin-left: 30px;
+  }
+}

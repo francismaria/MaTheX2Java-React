@@ -28,12 +28,12 @@
   margin: 2em 0;
 }
 
-form input:active,
-form input:focus {
+#contactPanel form input:active,
+#contactPanel form input:focus {
   outline: none !important;
 }
 
-form input[type='submit'] {
+#contactPanel form input[type='submit'] {
   border: solid 2px #3e7cb1;
   width: 50%;
   margin: 5% 25%;
@@ -46,13 +46,13 @@ form input[type='submit'] {
   -moz-appearance: none;
 }
 
-form input[type='submit']:hover {
+#contactPanel form input[type='submit']:hover {
   color: white;
   background-color: #3e7cb1;
   cursor: pointer;
 }
 
-form textarea {
+#contactPanel form textarea {
   padding: 0.5em;
   margin-top: 2em;
   font-size: 1.1em;
@@ -61,7 +61,50 @@ form textarea {
   border-radius: 5px;
 }
 
-form textarea:active,
-form textarea:focus {
+#contactPanel form textarea:active,
+#contactPanel form textarea:focus {
   outline: black !important;
+}
+
+/* ------------------------
+ *     Smartphone Version
+ * ------------------------ */
+
+ @media screen and (max-width: 1199px){
+
+  #contactContainer {
+    flex-direction: column;
+  }
+
+  #contactInput .inputContainer input{
+      width: 100%;
+      height: 4em;
+      margin: 0;
+      border: none;
+      border-bottom: solid 2px black;
+  }
+  
+  #contactInput form input:active, #contactPanel form input:focus{
+      outline: none !important;
+  }
+  
+  #contactInput form input[type="submit"]{
+      border: solid 2px #3E7CB1;
+      width: 50%;
+      margin: 5% 25%;
+      border-radius: 25px;
+  }
+  
+  #contactInput form textarea{
+      margin-top: 2em;
+      width: 96%;
+      padding: 0.5em;
+      border: solid 2px black;
+      border-radius: 5px;
+  }
+  
+  #contactInput form input ::placeholder{
+      font-size: 2em;
+      color: black;
+  }
 }

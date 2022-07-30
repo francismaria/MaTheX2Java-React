@@ -37,3 +37,19 @@ ul {
   padding-bottom: 0.5em;
   border-bottom: 1px solid black;
 }
+
+/* ------------------------
+ *     Smartphone Version
+ * ------------------------ */
+ 
+@media screen and (max-width: 1199px){
+  .mainPanel{
+    padding: 4em;
+  }
+  
+  .mainPanel h2{
+    margin-top: 0;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid black;
+  }
+}

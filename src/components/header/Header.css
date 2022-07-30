@@ -1,5 +1,5 @@
 header {
-  padding: 1em 4em;
+  padding: 0.5em 4em;
   background-color: #3e7cb1;
   display: flex;
   align-items: center;
@@ -9,4 +9,9 @@ header {
 header a {
   color: white;
   text-decoration: none;
+}
+
+header h1 {
+  font-size: 2em;
+  font-weight: bold;
 }

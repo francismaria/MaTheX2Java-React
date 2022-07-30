@@ -1,5 +1,13 @@
 import RuleContentHeader from './header/RuleContentHeader';
+import RuleContentUsage from './usage/RuleContentUsage';
 import { RuleContentProps } from './RuleContent';
+import {
+  ANNOTATION_NAME_LATEX,
+  ANNOTATION_RETURN_TYPE_LATEX,
+  ANNOTATION_SINGLE_TYPE_VARIABLE_LATEX,
+  ANNOTATION_MULTI_TYPE_VARIABLE_LATEX,
+  ANNOTATION_ARRAY_TYPE_VARIABLE_LATEX
+} from './usage/Examples';
 
 function AnnotationRuleContent({ ruleContentClickHandler }: RuleContentProps) {
   return (
@@ -28,11 +36,13 @@ function AnnotationRuleContent({ ruleContentClickHandler }: RuleContentProps) {
           <li>
             <u>Name</u>: if present, assigns the specified name to the generated Java method.
             Otherwise, it assigns a custom (template) name.
+            <RuleContentUsage code={ANNOTATION_NAME_LATEX} />
           </li>
           <li>
             <u>Return Type</u>: if present, sets the return type of the generated method to the
             specified input type. Otherwise, it sets the return type of the generated method to the
             default type - &lsquo;real&rsquo; (which maps to a Java double).
+            <RuleContentUsage code={ANNOTATION_RETURN_TYPE_LATEX} />
           </li>
         </ul>
         <h4>1.2. Variable-Specific Annotations</h4>
@@ -53,18 +63,17 @@ function AnnotationRuleContent({ ruleContentClickHandler }: RuleContentProps) {
           <li>
             <u>Single-Type</u>: if present, assigns the specified name to the generated Java method.
             Otherwise, it assigns a custom (template) name.
-          </li>
-          <li>
-            <u>Single-Type</u>: if present, assigns the specified name to the generated Java method.
-            Otherwise, it assigns a custom (template) name.
+            <RuleContentUsage code={ANNOTATION_SINGLE_TYPE_VARIABLE_LATEX} />
           </li>
           <li>
             <u>Multi-Type</u>: if present, assigns the specified name to the generated Java method.
             Otherwise, it assigns a custom (template) name.
+            <RuleContentUsage code={ANNOTATION_MULTI_TYPE_VARIABLE_LATEX} />
           </li>
           <li>
             <u>Array-Type</u>: if present, assigns the specified name to the generated Java method.
             Otherwise, it assigns a custom (template) name.
+            <RuleContentUsage code={ANNOTATION_ARRAY_TYPE_VARIABLE_LATEX} />
           </li>
         </ul>
       </div>

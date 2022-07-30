@@ -1,5 +1,20 @@
 import RuleContentHeader from './header/RuleContentHeader';
+import RuleContentUsage from './usage/RuleContentUsage';
 import { RuleContentProps } from './RuleContent';
+
+const METHOD_INCOVATION_EXPRESSION_LATEX: string = `${`// This method, to be invoked, must be written before the method that is invoking it
+% name : func
+\\begin{equation}
+  % [c] : short
+  % [d] : int 
+  a = c + d 
+\\end{equation}
+
+\\begin{equation}
+  % [l]: short 
+  % [d] : int 
+  a = func(l, d) + k     // Invocation of the "func" method
+\\end{equation}`}`;
 
 function InvocationsRuleContent({ ruleContentClickHandler }: RuleContentProps) {
   return (
@@ -18,6 +33,13 @@ function InvocationsRuleContent({ ruleContentClickHandler }: RuleContentProps) {
           To invoke a method, one should define it before the method that is invoking it. Below is
           an usage example.
         </p>
+        <h4>Examples</h4>
+        <ul>
+          <li>
+            <u>Method invocation</u>:
+            <RuleContentUsage code={METHOD_INCOVATION_EXPRESSION_LATEX} />
+          </li>
+        </ul>
       </div>
     </section>
   );

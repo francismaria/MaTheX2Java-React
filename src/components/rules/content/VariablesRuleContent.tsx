@@ -1,5 +1,11 @@
 import RuleContentHeader from './header/RuleContentHeader';
+import RuleContentUsage from './usage/RuleContentUsage';
 import { RuleContentProps } from './RuleContent';
+import {
+  VARIABLES_MULTI_DIMENSIONAL_ARRAY_TYPE_LATEX,
+  VARIABLES_ONE_DIMENSION_ARRAY_TYPE_LATEX,
+  VARIABLES_SCALAR_TYPE_LATEX
+} from './usage/Examples';
 
 function VariablesRuleContent({ ruleContentClickHandler }: RuleContentProps) {
   return (
@@ -35,6 +41,24 @@ function VariablesRuleContent({ ruleContentClickHandler }: RuleContentProps) {
           raise an error.
         </p>
         <p>To index a variable, it has to be written according to the below specification:</p>
+        <i>
+          name_of_the_variable <strong>_ index0, index1</strong>
+        </i>
+        <h4>Examples</h4>
+        <ul>
+          <li>
+            <u>Scalar variable</u>:
+            <RuleContentUsage code={VARIABLES_SCALAR_TYPE_LATEX} />
+          </li>
+          <li>
+            <u>One-dimension array variable</u>:
+            <RuleContentUsage code={VARIABLES_ONE_DIMENSION_ARRAY_TYPE_LATEX} />
+          </li>
+          <li>
+            <u>Multi-dimension array variable</u>:
+            <RuleContentUsage code={VARIABLES_MULTI_DIMENSIONAL_ARRAY_TYPE_LATEX} />
+          </li>
+        </ul>
       </div>
     </section>
   );

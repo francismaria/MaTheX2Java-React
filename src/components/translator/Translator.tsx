@@ -45,6 +45,13 @@ function Translator() {
     try {
       const translatedCode = runTranslation(sourceCodeContainerContent);
       setDestinationCodeContainerContent(translatedCode);
+      setTranslationStatus({
+        loading: false,
+        error: {
+          active: false,
+          msg: EMPTY_CONTENT
+        }
+      });
     } catch (error) {
       if (error instanceof Error) {
         setTranslationStatus({
@@ -68,6 +75,7 @@ function Translator() {
         msg: EMPTY_CONTENT
       }
     });
+    setDestinationCodeContainerContent(EMPTY_CONTENT);
     setIsTranslationSubmitted(false);
   };
 

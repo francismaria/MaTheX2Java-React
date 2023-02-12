@@ -89,8 +89,7 @@ function Rules() {
           <a
             href="https://github.com/francismaria/MaTheX2Java/blob/master/docs/MaTheX2Java_UsersGuide.pdf"
             target="_blank"
-            rel="noreferrer"
-          >
+            rel="noreferrer">
             here
           </a>{' '}
           the pdf version of the user guide.
@@ -101,8 +100,7 @@ function Rules() {
           <a
             href="http://texdoc.net/texmf-dist/doc/latex/amsmath/amsldoc.pdf"
             target="_blank"
-            rel="noreferrer"
-          >
+            rel="noreferrer">
             here
           </a>
           .

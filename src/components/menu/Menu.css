@@ -1,0 +1,99 @@
+/**
+ * Minimum value to set in order to override Ace's 
+ * z-index property for the editor's line numbers.
+ */
+#menuLinksContainer {
+  z-index: 5;
+}
+
+#menuLinksContainer ul {
+  display: flex;
+}
+
+@media screen and (min-width: 1200px) {
+  #menu {
+    display: flex;
+    align-items: center;
+  }
+
+  #menuIcon {
+    display: none;
+  }
+  #menuLinksContainer ul li {
+    margin: 0 2em;
+  }
+
+  #menuLinksContainer ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.2s;
+    -webkit-transition: color 0.2s;
+    -moz-transition: color 0.2s;
+    -o-transition: color 0.2s;
+  }
+
+  #menuLinksContainer ul li a:after {
+    display: block;
+    content: '';
+    border-bottom: solid 2px #eae9e5;
+    transform: scaleX(0);
+    transition: transform 0.4s;
+    -webkit-transition: transform 0.4s;
+    -moz-transition: transform 0.4s;
+    -o-transition: transform 0.4s;
+  }
+
+  #menuLinksContainer ul li a:hover {
+    color: #eae9e5;
+  }
+
+  #menuLinksContainer ul li a:hover:after {
+    transform: scaleX(1);
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  #menuIcon i {
+    color: white;
+    font-size: 28px;
+  }
+
+  #menuIcon:hover {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+
+  #menuLinksContainer {
+    position: absolute;
+    left: 0;
+    top: 6.5em;
+    width: 100%;
+    max-height: 0;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #bfe1ff;
+    transition: max-height 0.5s ease-out;
+    -webkit-transition: max-height 0.5s ease-out;
+    -moz-transition: max-height 0.5s ease-out;
+    -o-transition: max-height 0.5s ease-out;
+  }
+
+  #menuLinksContainer ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #menuLinksContainer li {
+    padding: 0.5em 0;
+  }
+
+  #menuLinksContainer li:hover {
+    opacity: 0.7;
+  }
+
+  #menuLinksContainer a {
+    color: black;
+  }
+}

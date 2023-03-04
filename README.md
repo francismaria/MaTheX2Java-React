@@ -1,2 +1,3 @@
-# MaTheX2Java-React
-This repository hosts the code for the UI for the MaTheX2Java application.
+# MaTheX2Java-React: Web Application
+
+This repository hosts the code for the MaTheX2Java web application.

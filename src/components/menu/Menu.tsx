@@ -22,8 +22,7 @@ function Menu() {
         role="menu"
         tabIndex={0}
         onClick={handleMenuClick}
-        onKeyDown={handleMenuClick}
-      >
+        onKeyDown={handleMenuClick}>
         <i className="fas fa-bars" />
       </div>
       <nav id="menuLinksContainer" data-testid="menuLinksContainer">

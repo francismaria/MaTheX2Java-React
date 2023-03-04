@@ -12,8 +12,7 @@ function RuleContentHeader({ title, ruleContentClickHandler }: RuleContentHeader
       role="switch"
       tabIndex={0}
       aria-checked="false"
-      onClick={ruleContentClickHandler}
-    >
+      onClick={ruleContentClickHandler}>
       <h3>{title}</h3>
       <div className="iconContainer">
         <i className="fas fa-plus" />

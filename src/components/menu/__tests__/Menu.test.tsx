@@ -24,7 +24,7 @@ describe('Navigation links are rendered correctly', () => {
     expect(historyMock.push).toHaveBeenCalledWith(
       expect.objectContaining(createPartialRouteRequestObject('/about')),
       undefined,
-      expect.anything()
+      expect.any(Object)
     );
   });
 
@@ -34,7 +34,7 @@ describe('Navigation links are rendered correctly', () => {
     expect(historyMock.push).toHaveBeenCalledWith(
       expect.objectContaining(createPartialRouteRequestObject('/rules')),
       undefined,
-      expect.anything()
+      expect.any(Object)
     );
   });
 
@@ -44,7 +44,7 @@ describe('Navigation links are rendered correctly', () => {
     expect(historyMock.push).toHaveBeenCalledWith(
       expect.objectContaining(createPartialRouteRequestObject('/contact')),
       undefined,
-      expect.anything()
+      expect.any(Object)
     );
   });
 

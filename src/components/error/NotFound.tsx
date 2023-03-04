@@ -1,7 +1,9 @@
+import './NotFound.css';
+
 function NotFound() {
   return (
-    <main style={{ padding: '1rem' }}>
-      <p>There's nothing here!</p>
+    <main id="notFoundPanel">
+      <p>There&apos;s nothing here!</p>
     </main>
   );
 }

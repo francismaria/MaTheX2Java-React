@@ -6,6 +6,7 @@ import Footer from '../footer/Footer';
 import Translator from '../translator/Translator';
 import Rules from 'components/rules/Rules';
 import About from 'components/about/About';
+import Contact from 'components/contact/Contact';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Translator />} />
         <Route path="/about" element={<About />} />
         <Route path="/rules" element={<Rules />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

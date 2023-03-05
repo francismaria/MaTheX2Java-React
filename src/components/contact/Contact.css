@@ -65,41 +65,38 @@
 }
 
 @media screen and (max-width: 1200px) {
-  #main-container {
-    padding: 2em;
-  }
-
-  #main-container h2 {
-    margin-top: 0;
-    padding-bottom: 0.5em;
-    border-bottom: 1px solid black;
-  }
-
-  #main-container form input {
+  #contactWrapper input {
     width: 100%;
-    height: 4em;
-    margin: 2em 0;
+    height: 1em;
+    margin: 1em 0;
     border: none;
-    border-bottom: solid 2px black;
-    padding: 0.5em;
+    border-bottom: 1px solid black;
+    padding: 0.5em 0;
+    font-size: large;
   }
 
-  #main-container form input[type='submit'] {
-    border: solid 2px #3e7cb1;
+  #contactWrapper input[type='submit'] {
+    font-size: medium;
+    font-weight: normal;
+    height: 3em;
+    color: black;
+    background-color: white;
+    border: solid 1px black;
     width: 50%;
     margin: 5% 25%;
     border-radius: 25px;
   }
 
-  #main-container form textarea {
+  #contactWrapper textarea {
     margin-top: 2em;
     width: 96%;
     padding: 0.5em;
-    border: solid 2px black;
+    border: 1px solid black;
     border-radius: 5px;
+    font-size: large;
   }
 
-  #main-container form input ::placeholder {
+  #contactWrapper form input ::placeholder {
     font-size: 2em;
     color: black;
   }

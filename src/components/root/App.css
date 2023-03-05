@@ -38,3 +38,9 @@ ul {
   padding-bottom: 0.5em;
   border-bottom: 1px solid black;
 }
+
+@media screen and (max-width: 1200px) {
+  .mainPanel {
+    padding: 1em 2em;
+  }
+}

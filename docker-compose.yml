@@ -1,0 +1,5 @@
+services:
+  frontend-react:
+    build: .
+    ports:
+      - "8000:3000"

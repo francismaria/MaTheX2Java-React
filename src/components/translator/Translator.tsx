@@ -16,11 +16,13 @@ const MIN_DESKTOP_WIDTH = 1199;
 const DEFAULT_VISIBLE_CODE_CONTAINER_CLASSNAME = 'codeContainer';
 const HIDDEN_CONTAINER_CLASSNAME = 'hiddenContainer';
 const EMPTY_CONTENT = '';
+const DEFAULT_CONTENT =
+  '% name: exampleEquation\n\\begin{equation}\n\tresult = (2 - \\sin{0.4})^{3 - c}\n\\end{equation}';
 
 function Translator() {
   const size: Size = useWindowSize();
   const [isTranslationSubmitted, setIsTranslationSubmitted] = useState(false);
-  const [sourceCodeContainerContent, setSourceCodeContainerContent] = useState(EMPTY_CONTENT);
+  const [sourceCodeContainerContent, setSourceCodeContainerContent] = useState(DEFAULT_CONTENT);
   const [destinationCodeContainerContent, setDestinationCodeContainerContent] =
     useState(EMPTY_CONTENT);
   const [translationStatus, setTranslationStatus] = useState({
@@ -156,6 +158,7 @@ function Translator() {
             name="sourceCodeEditor"
             className="reactAceEditor"
             highlightActiveLine
+            value={sourceCodeContainerContent}
             onChange={(value) => setSourceCodeContainerContent(value)}
           />
         </div>
@@ -170,7 +173,6 @@ function Translator() {
             className="reactAceEditor"
             readOnly
             highlightActiveLine={false}
-            data-testid="destinationCodeEditor"
             value={destinationCodeContainerContent}
           />
           {renderLoadingContainer()}

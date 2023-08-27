@@ -86,10 +86,7 @@ function Rules() {
         </p>
         <p>
           You can find{' '}
-          <a
-            href="https://github.com/francismaria/MaTheX2Java/blob/master/docs/MaTheX2Java_UsersGuide.pdf"
-            target="_blank"
-            rel="noreferrer">
+          <a href="/docs/user_guide.pdf" target="_blank" rel="noreferrer">
             here
           </a>{' '}
           the pdf version of the user guide.

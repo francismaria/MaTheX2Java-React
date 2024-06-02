@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/MaTheX2Java-React/static/css/main.38af5425.css",
-    "main.js": "/MaTheX2Java-React/static/js/main.66c13a79.js",
+    "main.js": "/MaTheX2Java-React/static/js/main.45308970.js",
     "static/js/787.1114a099.chunk.js": "/MaTheX2Java-React/static/js/787.1114a099.chunk.js",
     "index.html": "/MaTheX2Java-React/index.html",
     "main.38af5425.css.map": "/MaTheX2Java-React/static/css/main.38af5425.css.map",
-    "main.66c13a79.js.map": "/MaTheX2Java-React/static/js/main.66c13a79.js.map",
+    "main.45308970.js.map": "/MaTheX2Java-React/static/js/main.45308970.js.map",
     "787.1114a099.chunk.js.map": "/MaTheX2Java-React/static/js/787.1114a099.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.38af5425.css",
-    "static/js/main.66c13a79.js"
+    "static/js/main.45308970.js"
   ]
 }

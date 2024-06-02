@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/MaTheX2Java-React">
       <App />
     </BrowserRouter>
   </React.StrictMode>,
